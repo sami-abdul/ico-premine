@@ -1,0 +1,8 @@
+{
+  "name": "ico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "dependencies": {
+  }
+}
