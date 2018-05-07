@@ -38,9 +38,11 @@ contract CrowdFunding is Ownable, Repository {
         team.add(TeamMember(0x54ca715a29a694bf837f5f2b74163b07ad3f3e8b, 10));
 
         token = new Token(TOTAL_SUPPLY, CROWD_FUNDING_SHARE + TEAM_SHARE, address(this));
+        token.issuedCoins += CROWD_FUNDING_SHARE + TEAM_SHARE;
     }
 
     function transferMinedTokens() onlyOwner {
+        require(token.issuedCoins < totalSupply);
         require(lastBlock < block.number);
         for (; lastBlock < block.number; lastBlock++) {
             token.balances[wallet] += blockReward;

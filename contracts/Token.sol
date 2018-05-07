@@ -36,6 +36,7 @@ contract Token is ERC223 {
     mapping(address => mapping(address => uint256)) internal allowed;
 
     uint256 totalSupply_;
+    uint256 public issuedCoins;
 
     function Token(uint _totalSupply, uint _initialBalance, address _crowdFundingAddress) {
         totalSupply_ = _totalSupply;
