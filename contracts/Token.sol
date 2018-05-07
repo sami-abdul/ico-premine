@@ -29,7 +29,6 @@ contract Token is ERC223 {
     mapping(address => mapping(address => uint256)) internal allowed;
 
     uint256 totalSupply_;
-    uint256 public issuedCoins;
 
     uint public latestDifficultyPeriodStarted;
     uint public epochCount;
@@ -61,6 +60,7 @@ contract Token is ERC223 {
         totalSupply_ = _totalSupply;
 
         balances[_crowdFundingAddress] = _initialBalance;
+        tokensMinted += _initialBalance;
 
         maxSupplyForEra = _totalSupply.div(2);
         miningTarget = _MAXIMUM_TARGET;
@@ -190,7 +190,7 @@ contract Token is ERC223 {
             rewardEra = rewardEra + 1;
         }
 
-        maxSupplyForEra = _totalSupply - _totalSupply.div( 2**(rewardEra + 1));
+        maxSupplyForEra = totalSupply_ - totalSupply_.div( 2**(rewardEra + 1));
 
         epochCount = epochCount.add(1);
 

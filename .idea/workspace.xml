@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50d79d5f-40bd-4050-8dfd-c1961b77c98a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contracts/CrowdFunding.sol" afterPath="$PROJECT_DIR$/contracts/CrowdFunding.sol" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contracts/SafeMath.sol" afterPath="$PROJECT_DIR$/contracts/SafeMath.sol" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contracts/Token.sol" afterPath="$PROJECT_DIR$/contracts/Token.sol" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +18,8 @@
       <file leaf-file-name="CrowdFunding.sol" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contracts/CrowdFunding.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+            <state relative-caret-position="848">
+              <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -30,9 +28,33 @@
       <file leaf-file-name="Token.sol" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contracts/Token.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2240">
-              <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-              <folding />
+            <state relative-caret-position="32">
+              <caret line="56" column="137" lean-forward="true" selection-start-line="56" selection-start-column="137" selection-end-line="56" selection-end-column="137" />
+              <folding>
+                <element signature="n#!!block;n#totalSupply#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#balanceOf#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#transfer#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#transferFrom#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#transfer#1;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#transferFrom#1;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#approve#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#allowance#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#increaseApproval#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#decreaseApproval#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#_transfer#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#_transferFrom#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#contractFallback#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#isContract#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#mint#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#_startNewMiningEpoch#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#_reAdjustDifficulty#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#getChallengeNumber#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#getMiningDifficulty#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#getMiningTarget#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#getMiningReward#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#getMintDigest#0;n#Token#0" expanded="false" />
+                <element signature="n#!!block;n#checkMintSolution#0;n#Token#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,8 +113,8 @@
         <option value="$PROJECT_DIR$/contracts/Repository.sol" />
         <option value="$PROJECT_DIR$/contracts/Ownable.sol" />
         <option value="$PROJECT_DIR$/contracts/SafeMath.sol" />
-        <option value="$PROJECT_DIR$/contracts/CrowdFunding.sol" />
         <option value="$PROJECT_DIR$/contracts/Token.sol" />
+        <option value="$PROJECT_DIR$/contracts/CrowdFunding.sol" />
       </list>
     </option>
   </component>
@@ -451,7 +473,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1216">
           <caret line="76" column="20" lean-forward="true" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
-          <folding />
+          <folding>
+            <element signature="n#!!block;n#totalSupply#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#balanceOf#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#transfer#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#transferFrom#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#transfer#1;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#transferFrom#1;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#approve#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#allowance#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#increaseApproval#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#decreaseApproval#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#_transfer#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#_transferFrom#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#contractFallback#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#isContract#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#mint#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#_startNewMiningEpoch#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#_reAdjustDifficulty#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#getChallengeNumber#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#getMiningDifficulty#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#getMiningTarget#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#getMiningReward#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#getMintDigest#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#checkMintSolution#0;n#Token#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -475,7 +521,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
           <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding />
+          <folding>
+            <element signature="n#!!block;n#totalSupply#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#balanceOf#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#transfer#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#transferFrom#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#transfer#1;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#transferFrom#1;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#approve#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#allowance#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#increaseApproval#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#decreaseApproval#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#_transfer#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#_transferFrom#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#contractFallback#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#isContract#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#mint#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#_startNewMiningEpoch#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#_reAdjustDifficulty#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#getChallengeNumber#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#getMiningDifficulty#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#getMiningTarget#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#getMiningReward#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#getMintDigest#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#checkMintSolution#0;n#Token#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -629,17 +699,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/contracts/CrowdFunding.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+        <state relative-caret-position="848">
+          <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contracts/Token.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2240">
-          <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
-          <folding />
+        <state relative-caret-position="32">
+          <caret line="56" column="137" lean-forward="true" selection-start-line="56" selection-start-column="137" selection-end-line="56" selection-end-column="137" />
+          <folding>
+            <element signature="n#!!block;n#totalSupply#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#balanceOf#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#transfer#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#transferFrom#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#transfer#1;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#transferFrom#1;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#approve#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#allowance#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#increaseApproval#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#decreaseApproval#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#_transfer#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#_transferFrom#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#contractFallback#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#isContract#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#mint#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#_startNewMiningEpoch#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#_reAdjustDifficulty#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#getChallengeNumber#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#getMiningDifficulty#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#getMiningTarget#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#getMiningReward#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#getMintDigest#0;n#Token#0" expanded="false" />
+            <element signature="n#!!block;n#checkMintSolution#0;n#Token#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

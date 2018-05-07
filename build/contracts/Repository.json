@@ -1,0 +1,301 @@
+{
+  "contractName": "Repository",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820a7a6e1d4c6870e1a084c78d03cee70d96f3371ec9e84c6553270ed5b939d93d30029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820a7a6e1d4c6870e1a084c78d03cee70d96f3371ec9e84c6553270ed5b939d93d30029",
+  "sourceMap": "25:126:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:126:3;;;;;;;",
+  "deployedSourceMap": "25:126:3:-;;;;;",
+  "source": "pragma solidity ^0.4.0;\n\ncontract Repository {\n\n    struct TeamMember {\n        address wallet;\n        uint16 percent;\n    }\n\n    TeamMember[] team;\n}",
+  "sourcePath": "/media/sami/Local Disk/Workspace/Solidity/Crowdfunding/contracts/Repository.sol",
+  "ast": {
+    "absolutePath": "/media/sami/Local Disk/Workspace/Solidity/Crowdfunding/contracts/Repository.sol",
+    "exportedSymbols": {
+      "Repository": [
+        652
+      ]
+    },
+    "id": 653,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 643,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 652,
+        "linearizedBaseContracts": [
+          652
+        ],
+        "name": "Repository",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Repository.TeamMember",
+            "id": 648,
+            "members": [
+              {
+                "constant": false,
+                "id": 645,
+                "name": "wallet",
+                "nodeType": "VariableDeclaration",
+                "scope": 648,
+                "src": "80:14:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 644,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "80:7:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 647,
+                "name": "percent",
+                "nodeType": "VariableDeclaration",
+                "scope": 648,
+                "src": "104:14:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint16",
+                  "typeString": "uint16"
+                },
+                "typeName": {
+                  "id": 646,
+                  "name": "uint16",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "104:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "TeamMember",
+            "nodeType": "StructDefinition",
+            "scope": 652,
+            "src": "52:73:3",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 651,
+            "name": "team",
+            "nodeType": "VariableDeclaration",
+            "scope": 652,
+            "src": "131:17:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_TeamMember_$648_storage_$dyn_storage",
+              "typeString": "struct Repository.TeamMember[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 649,
+                "name": "TeamMember",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 648,
+                "src": "131:10:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_TeamMember_$648_storage_ptr",
+                  "typeString": "struct Repository.TeamMember"
+                }
+              },
+              "id": 650,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "131:12:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_TeamMember_$648_storage_$dyn_storage_ptr",
+                "typeString": "struct Repository.TeamMember[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 653,
+        "src": "25:126:3"
+      }
+    ],
+    "src": "0:151:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/media/sami/Local Disk/Workspace/Solidity/Crowdfunding/contracts/Repository.sol",
+    "exportedSymbols": {
+      "Repository": [
+        652
+      ]
+    },
+    "id": 653,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 643,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 652,
+        "linearizedBaseContracts": [
+          652
+        ],
+        "name": "Repository",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Repository.TeamMember",
+            "id": 648,
+            "members": [
+              {
+                "constant": false,
+                "id": 645,
+                "name": "wallet",
+                "nodeType": "VariableDeclaration",
+                "scope": 648,
+                "src": "80:14:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 644,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "80:7:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 647,
+                "name": "percent",
+                "nodeType": "VariableDeclaration",
+                "scope": 648,
+                "src": "104:14:3",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint16",
+                  "typeString": "uint16"
+                },
+                "typeName": {
+                  "id": 646,
+                  "name": "uint16",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "104:6:3",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint16",
+                    "typeString": "uint16"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "TeamMember",
+            "nodeType": "StructDefinition",
+            "scope": 652,
+            "src": "52:73:3",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 651,
+            "name": "team",
+            "nodeType": "VariableDeclaration",
+            "scope": 652,
+            "src": "131:17:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_TeamMember_$648_storage_$dyn_storage",
+              "typeString": "struct Repository.TeamMember[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 649,
+                "name": "TeamMember",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 648,
+                "src": "131:10:3",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_TeamMember_$648_storage_ptr",
+                  "typeString": "struct Repository.TeamMember"
+                }
+              },
+              "id": 650,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "131:12:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_TeamMember_$648_storage_$dyn_storage_ptr",
+                "typeString": "struct Repository.TeamMember[]"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 653,
+        "src": "25:126:3"
+      }
+    ],
+    "src": "0:151:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.23+commit.124ca40d.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-05-07T12:46:45.319Z"
+}

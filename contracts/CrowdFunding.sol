@@ -31,22 +31,13 @@ contract CrowdFunding is Ownable, Repository {
     function CrowdFunding() public payable {
         lastBlock = block.number;
 
-        team.add(TeamMember(0x8b760f272a996f834f7408403e507401dd954dd4, 30));
-        team.add(TeamMember(0x617d1326a7ae1df47510242e07dbf3f0e0ac4d63, 30));
-        team.add(TeamMember(0x76b741db5b2763c55a3d7458fc646caa14e9372c, 20));
-        team.add(TeamMember(0x90110ffc4937dcdbb8c386c1e18cb2c1f1ba9f8a, 10));
-        team.add(TeamMember(0x54ca715a29a694bf837f5f2b74163b07ad3f3e8b, 10));
+        team.push(TeamMember(0x8b760F272a996f834F7408403e507401DD954dD4, 30));
+        team.push(TeamMember(0x617d1326a7ae1df47510242e07dbf3f0e0ac4d63, 30));
+        team.push(TeamMember(0x76b741db5b2763c55a3d7458fc646caa14e9372c, 20));
+        team.push(TeamMember(0x90110ffc4937dcdbb8c386c1e18cb2c1f1ba9f8a, 10));
+        team.push(TeamMember(0x54cA715a29a694bF837F5F2b74163B07Ad3F3E8b, 10));
 
-        token = new Token("Token", "TKN", 8, TOTAL_SUPPLY, CROWD_FUNDING_SHARE + TEAM_SHARE, address(this));
-        token.issuedCoins += CROWD_FUNDING_SHARE + TEAM_SHARE;
-    }
-
-    function transferMinedTokens() onlyOwner {
-        require(token.issuedCoins < totalSupply);
-        require(lastBlock < block.number);
-        for (; lastBlock < block.number; lastBlock++) {
-            token.balances[wallet] += blockReward;
-        }
+        token = new Token("Token", "TKN", 8, TOKEN_SUPPLY, CROWD_FUNDING_SHARE + TEAM_SHARE, address(this));
     }
 
     function getBalance() public view returns (uint) {
@@ -74,8 +65,8 @@ contract CrowdFunding is Ownable, Repository {
         }
         require (totalShare == 100);
 
-        for (uint i = 0; i < team.length; i++) {
-            token.transfer((team[i].percent / 100) * TEAM_SHARE);
+        for (uint j = 0; j < team.length; j++) {
+            token.transfer(team[j].wallet, (team[j].percent / 100) * TEAM_SHARE);
         }
     }
 
