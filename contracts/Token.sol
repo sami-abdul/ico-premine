@@ -28,6 +28,10 @@ contract Token is ERC223 {
 
     using SafeMath for uint256;
 
+    string public name = "Token";
+    string public symbol = "TKN";
+    uint8 public decimals = 8;
+
     mapping(address => uint256) balances;
     mapping(address => mapping(address => uint256)) internal allowed;
 

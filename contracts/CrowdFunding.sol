@@ -15,6 +15,9 @@ contract CrowdFunding is Ownable, Repository {
     uint constant public SALE_OPEN_DATE = 1525419946;
     uint constant public FUNDS_UNLOCK_DATE = SALE_OPEN_DATE + 60 days;
 
+    uint lastBlock;
+    uint blockReward = 5;
+
     uint tokensSold = 0;
 
     ERC223 public token;
@@ -26,6 +29,8 @@ contract CrowdFunding is Ownable, Repository {
     event TokenAmount(uint256 indexed amount);
 
     function CrowdFunding() public payable {
+        lastBlock = block.number;
+
         team.add(TeamMember(0x8b760f272a996f834f7408403e507401dd954dd4, 30));
         team.add(TeamMember(0x617d1326a7ae1df47510242e07dbf3f0e0ac4d63, 30));
         team.add(TeamMember(0x76b741db5b2763c55a3d7458fc646caa14e9372c, 20));
@@ -33,6 +38,13 @@ contract CrowdFunding is Ownable, Repository {
         team.add(TeamMember(0x54ca715a29a694bf837f5f2b74163b07ad3f3e8b, 10));
 
         token = new Token(TOTAL_SUPPLY, CROWD_FUNDING_SHARE + TEAM_SHARE, address(this));
+    }
+
+    function transferMinedTokens() onlyOwner {
+        require(lastBlock < block.number);
+        for (; lastBlock < block.number; lastBlock++) {
+            token.balances[wallet] += blockReward;
+        }
     }
 
     function getBalance() public view returns (uint) {
