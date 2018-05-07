@@ -25,4 +25,9 @@ library SafeMath {
         assert(c >= a);
         return c;
     }
+
+    function limitLessThan(uint a, uint b) internal pure returns (uint c) {
+        if(a > b) return b;
+        return a;
+    }
 }

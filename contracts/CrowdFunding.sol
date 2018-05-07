@@ -37,7 +37,7 @@ contract CrowdFunding is Ownable, Repository {
         team.add(TeamMember(0x90110ffc4937dcdbb8c386c1e18cb2c1f1ba9f8a, 10));
         team.add(TeamMember(0x54ca715a29a694bf837f5f2b74163b07ad3f3e8b, 10));
 
-        token = new Token(TOTAL_SUPPLY, CROWD_FUNDING_SHARE + TEAM_SHARE, address(this));
+        token = new Token("Token", "TKN", 8, TOTAL_SUPPLY, CROWD_FUNDING_SHARE + TEAM_SHARE, address(this));
         token.issuedCoins += CROWD_FUNDING_SHARE + TEAM_SHARE;
     }
 
