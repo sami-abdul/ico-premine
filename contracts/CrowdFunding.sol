@@ -28,7 +28,7 @@ contract CrowdFunding is Ownable, Repository {
     event TokenPurchase(address indexed purchaser, address indexed beneficiary, uint256 value, uint256 amount);
     event TokenAmount(uint256 indexed amount);
 
-    function CrowdFunding() public payable {
+    constructor() public {
         lastBlock = block.number;
 
         team.push(TeamMember(0x8b760F272a996f834F7408403e507401DD954dD4, 30));
@@ -92,7 +92,7 @@ contract CrowdFunding is Ownable, Repository {
         _forwardFunds();
     }
 
-    function _preValidatePurchase(address _beneficiary, uint256 _weiAmount) internal {
+    function _preValidatePurchase(address _beneficiary, uint256 _weiAmount) internal pure {
         require(_beneficiary != address(0));
         require(_weiAmount != 0);
     }

@@ -1,4 +1,4 @@
-pragma solidity ^0.4.0;
+pragma solidity ^0.4.8;
 
 contract Ownable {
     address public owner;
@@ -10,7 +10,7 @@ contract Ownable {
         _;
     }
 
-    function Ownable() public {
+    constructor() public {
         owner = msg.sender;
     }
 

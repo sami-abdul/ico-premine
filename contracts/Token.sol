@@ -8,8 +8,8 @@ contract ERC223 {
     function balanceOf(address who) public view returns (uint256);
     function transfer(address to, uint256 value) public returns (bool);
     function transferFrom(address from, address to, uint256 value) public returns (bool);
-    function transfer(address to, uint value, bytes data) returns (bool ok);
-    function transferFrom(address from, address to, uint value, bytes data) returns (bool ok);
+    function transfer(address to, uint value, bytes data) public returns (bool ok);
+    function transferFrom(address from, address to, uint value, bytes data) public returns (bool ok);
     function allowance(address owner, address spender) public view returns (uint256);
     function approve(address spender, uint256 value) public returns (bool);
 
@@ -53,7 +53,7 @@ contract Token is ERC223 {
 
     event Mint(address indexed from, uint reward_amount, uint epochCount, bytes32 newChallengeNumber);
 
-    function Token(string _name, string _symbol, uint8 _decimals, uint _totalSupply, uint _initialBalance, address _crowdFundingAddress) {
+    constructor(string _name, string _symbol, uint8 _decimals, uint _totalSupply, uint _initialBalance, address _crowdFundingAddress) public {
         name = _name;
         symbol = _symbol;
         decimals = _decimals;
@@ -78,23 +78,23 @@ contract Token is ERC223 {
         return balances[_owner];
     }
 
-    function transfer(address _to, uint _value, bytes _data) returns (bool success) {
-        if (!_transfer(_to, _value)) throw;
+    function transfer(address _to, uint _value, bytes _data) public returns (bool success) {
+        if (!_transfer(_to, _value)) revert();
         if (isContract(_to)) return contractFallback(msg.sender, _to, _value, _data);
         return true;
     }
 
-    function transferFrom(address _from, address _to, uint _value, bytes _data) returns (bool success) {
-        if (!_transferFrom(_from, _to, _value)) throw;
+    function transferFrom(address _from, address _to, uint _value, bytes _data) public returns (bool success) {
+        if (!_transferFrom(_from, _to, _value)) revert();
         if (isContract(_to)) return contractFallback(_from, _to, _value, _data);
         return true;
     }
 
-    function transfer(address _to, uint _value) returns (bool success) {
+    function transfer(address _to, uint _value) public returns (bool success) {
         return transfer(_to, _value, new bytes(0));
     }
 
-    function transferFrom(address _from, address _to, uint _value) returns (bool success) {
+    function transferFrom(address _from, address _to, uint _value) public returns (bool success) {
         return transferFrom(_from, _to, _value, new bytes(0));
     }
 
@@ -150,7 +150,7 @@ contract Token is ERC223 {
         return receiver.tokenFallback(msg.sender, _origin, _value, _data);
     }
 
-    function isContract(address _addr) private returns (bool is_contract) {
+    function isContract(address _addr) private view returns (bool is_contract) {
         uint length;
         assembly {length := extcodesize(_addr)}
         return length > 0;
@@ -197,7 +197,7 @@ contract Token is ERC223 {
         if (epochCount % _BLOCKS_PER_READJUSTMENT == 0) {
             _reAdjustDifficulty();
         }
-        challengeNumber = block.blockhash(block.number - 1);
+        challengeNumber = blockhash(block.number - 1);
     }
 
     function _reAdjustDifficulty() internal {
@@ -242,9 +242,8 @@ contract Token is ERC223 {
         return (50 * 10**uint(decimals) ).div( 2**rewardEra ) ;
     }
 
-    function getMintDigest(uint256 nonce, bytes32 challenge_digest, bytes32 challenge_number) public view returns (bytes32 digesttest) {
-        bytes32 digest = keccak256(challenge_number,msg.sender,nonce);
-        return digest;
+    function getMintDigest(uint256 nonce, bytes32 challenge_number) public view returns (bytes32 digesttest) {
+        return keccak256(challenge_number, msg.sender, nonce);
     }
 
     function checkMintSolution(uint256 nonce, bytes32 challenge_digest, bytes32 challenge_number, uint testTarget) public view returns (bool success) {
