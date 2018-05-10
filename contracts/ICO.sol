@@ -5,7 +5,7 @@ import "./Token.sol";
 import "./Repository.sol";
 import "./Ownable.sol";
 
-contract CrowdFunding is Ownable, Repository {
+contract ICO is Ownable, Repository {
     using SafeMath for uint256;
 
     uint constant public TOKEN_SUPPLY = 100000000;

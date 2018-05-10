@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50d79d5f-40bd-4050-8dfd-c1961b77c98a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/contracts/CrowdFunding.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/contracts/ERC223.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/contracts/ERC223Receiver.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/contracts/Migrations.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/contracts/Ownable.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/contracts/Receiver.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/contracts/Repository.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/contracts/SafeMath.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/contracts/Token.json" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/contracts/CrowdFunding.sol" afterPath="$PROJECT_DIR$/contracts/ICO.sol" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/contracts/CrowdFunding.json" afterPath="$PROJECT_DIR$/build/contracts/CrowdFunding.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/contracts/ERC223.json" afterPath="$PROJECT_DIR$/build/contracts/ERC223.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/contracts/ERC223Receiver.json" afterPath="$PROJECT_DIR$/build/contracts/ERC223Receiver.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/contracts/Ownable.json" afterPath="$PROJECT_DIR$/build/contracts/Ownable.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/contracts/Receiver.json" afterPath="$PROJECT_DIR$/build/contracts/Receiver.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/contracts/Repository.json" afterPath="$PROJECT_DIR$/build/contracts/Repository.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/contracts/SafeMath.json" afterPath="$PROJECT_DIR$/build/contracts/SafeMath.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/contracts/Token.json" afterPath="$PROJECT_DIR$/build/contracts/Token.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contracts/CrowdFunding.sol" afterPath="$PROJECT_DIR$/contracts/CrowdFunding.sol" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contracts/Ownable.sol" afterPath="$PROJECT_DIR$/contracts/Ownable.sol" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contracts/Receiver.sol" afterPath="$PROJECT_DIR$/contracts/Receiver.sol" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contracts/Token.sol" afterPath="$PROJECT_DIR$/contracts/Token.sol" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,11 +24,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CrowdFunding.sol" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contracts/CrowdFunding.sol">
+      <file leaf-file-name="ICO.sol" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/contracts/ICO.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="24" />
+            <state relative-caret-position="80">
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -39,41 +37,18 @@
       <file leaf-file-name="Token.sol" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contracts/Token.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="82" lean-forward="false" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
-              <folding>
-                <marker date="1525699437677" expanded="false" signature="2413:2449" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="2520:2560" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="2653:2814" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="3173:3232" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="3331:3401" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="3480:3609" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="3698:3747" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="3837:4029" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="4124:4476" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="4554:4831" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="4928:5317" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="5436:5573" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="5654:5757" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="5848:6678" ph="{...}" />
-                <marker date="1525699437677" expanded="true" signature="6725:7149" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="7195:8397" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="8467:8506" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="8574:8631" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="8695:8731" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="8795:8866" ph="{...}" />
-                <marker date="1525699437677" expanded="true" signature="8977:9047" ph="{...}" />
-                <marker date="1525699437677" expanded="false" signature="9199:9373" ph="{...}" />
-              </folding>
+            <state relative-caret-position="128">
+              <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Receiver.sol" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Receiver.sol" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contracts/Receiver.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="44" column="23" lean-forward="false" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+            <state relative-caret-position="144">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -82,8 +57,8 @@
       <file leaf-file-name="Ownable.sol" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contracts/Ownable.sol">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="0">
+              <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -152,10 +127,10 @@
         <option value="$PROJECT_DIR$/migrations/2_deploy_contracts.js" />
         <option value="$PROJECT_DIR$/contracts/Repository.sol" />
         <option value="$PROJECT_DIR$/contracts/SafeMath.sol" />
-        <option value="$PROJECT_DIR$/contracts/CrowdFunding.sol" />
-        <option value="$PROJECT_DIR$/contracts/Ownable.sol" />
         <option value="$PROJECT_DIR$/contracts/Token.sol" />
         <option value="$PROJECT_DIR$/contracts/Receiver.sol" />
+        <option value="$PROJECT_DIR$/contracts/Ownable.sol" />
+        <option value="$PROJECT_DIR$/contracts/CrowdFunding.sol" />
       </list>
     </option>
   </component>
@@ -179,40 +154,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Crowdfunding" />
+              <option name="myItemId" value="ICO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Crowdfunding" />
+              <option name="myItemId" value="ICO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Crowdfunding" />
+              <option name="myItemId" value="ICO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Crowdfunding" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Crowdfunding" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Crowdfunding" />
+              <option name="myItemId" value="ICO" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -222,12 +182,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Ethereum Repos/Octaneum-Token" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -466,7 +427,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="732" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -479,10 +439,10 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40065682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39901477" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23409091" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19090909" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -521,7 +481,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/CrowdFunding.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/ICO.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="24" />
@@ -533,30 +493,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="11" column="82" lean-forward="false" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
-          <folding>
-            <marker date="1525699437677" expanded="false" signature="2413:2449" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="2520:2560" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="2653:2814" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3173:3232" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3331:3401" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3480:3609" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3698:3747" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3837:4029" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="4124:4476" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="4554:4831" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="4928:5317" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="5436:5573" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="5654:5757" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="5848:6678" ph="{...}" />
-            <marker date="1525699437677" expanded="true" signature="6725:7149" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="7195:8397" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8467:8506" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8574:8631" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8695:8731" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8795:8866" ph="{...}" />
-            <marker date="1525699437677" expanded="true" signature="8977:9047" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="9199:9373" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -584,7 +521,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/CrowdFunding.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/ICO.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
           <caret line="44" column="49" lean-forward="false" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
@@ -596,34 +533,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1216">
           <caret line="76" column="20" lean-forward="true" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
-          <folding>
-            <marker date="1525699437677" expanded="false" signature="2413:2449" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="2520:2560" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="2653:2814" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3173:3232" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3331:3401" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3480:3609" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3698:3747" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3837:4029" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="4124:4476" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="4554:4831" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="4928:5317" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="5436:5573" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="5654:5757" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="5848:6678" ph="{...}" />
-            <marker date="1525699437677" expanded="true" signature="6725:7149" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="7195:8397" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8467:8506" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8574:8631" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8695:8731" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8795:8866" ph="{...}" />
-            <marker date="1525699437677" expanded="true" signature="8977:9047" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="9199:9373" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/CrowdFunding.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/ICO.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -631,7 +545,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/CrowdFunding.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/ICO.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
           <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
@@ -643,34 +557,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
           <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding>
-            <marker date="1525699437677" expanded="false" signature="2413:2449" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="2520:2560" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="2653:2814" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3173:3232" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3331:3401" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3480:3609" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3698:3747" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3837:4029" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="4124:4476" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="4554:4831" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="4928:5317" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="5436:5573" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="5654:5757" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="5848:6678" ph="{...}" />
-            <marker date="1525699437677" expanded="true" signature="6725:7149" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="7195:8397" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8467:8506" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8574:8631" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8695:8731" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8795:8866" ph="{...}" />
-            <marker date="1525699437677" expanded="true" signature="8977:9047" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="9199:9373" ph="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/CrowdFunding.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/ICO.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
@@ -692,7 +583,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/CrowdFunding.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/ICO.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
@@ -717,7 +608,7 @@
     <entry file="file://$PROJECT_DIR$/truffle-config.js" />
     <entry file="file://$PROJECT_DIR$/contracts/ERC23Interface.sol" />
     <entry file="file://$PROJECT_DIR$/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol" />
-    <entry file="file://$PROJECT_DIR$/contracts/CrowdFunding.sol" />
+    <entry file="file://$PROJECT_DIR$/contracts/ICO.sol" />
     <entry file="file://$PROJECT_DIR$/node_modules/openzeppelin-solidity/contracts/token/ERC20/DetailedERC20.sol" />
     <entry file="file://$PROJECT_DIR$/node_modules/zeppelin-solidity/contracts/token/ERC20/ERC20Basic.sol" />
     <entry file="file://$PROJECT_DIR$/node_modules/openzeppelin-solidity/contracts/crowdsale/emission/MintedCrowdsale.sol" />
@@ -769,28 +660,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/contracts/CrowdFunding.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="136" column="6" lean-forward="true" selection-start-line="136" selection-start-column="6" selection-end-line="136" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/contracts/SafeMath.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/Ownable.sol">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build/contracts/CrowdFunding.json" />
+    <entry file="file://$PROJECT_DIR$/build/contracts/SafeMath.json" />
     <entry file="file://$PROJECT_DIR$/contracts/SafeMath.sol">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
@@ -806,49 +677,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/CrowdFunding.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/Ownable.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="24" />
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contracts/Receiver.sol">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contracts/Token.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="82" lean-forward="false" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
-          <folding>
-            <marker date="1525699437677" expanded="false" signature="2413:2449" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="2520:2560" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="2653:2814" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3173:3232" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3331:3401" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3480:3609" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3698:3747" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="3837:4029" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="4124:4476" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="4554:4831" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="4928:5317" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="5436:5573" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="5654:5757" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="5848:6678" ph="{...}" />
-            <marker date="1525699437677" expanded="true" signature="6725:7149" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="7195:8397" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8467:8506" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8574:8631" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8695:8731" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="8795:8866" ph="{...}" />
-            <marker date="1525699437677" expanded="true" signature="8977:9047" ph="{...}" />
-            <marker date="1525699437677" expanded="false" signature="9199:9373" ph="{...}" />
-          </folding>
+        <state relative-caret-position="128">
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contracts/Receiver.sol">
+    <entry file="file://$PROJECT_DIR$/contracts/ICO.sol">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="44" column="23" lean-forward="false" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+        <state relative-caret-position="80">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding />
         </state>
       </provider>
